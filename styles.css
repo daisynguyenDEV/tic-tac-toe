@@ -1,0 +1,57 @@
+/* Đặt các kiểu dáng cơ bản cho toàn bộ trang */
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000; 
+    font-family: 'Playwrite GB S', serif; 
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+#playerText {
+    color: #fff;
+}
+
+#gameboard {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin: 20px 0; /* Thêm khoảng cách giữa gameboard và nút Restart */
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: #ffffff;;
+}
+
+#restartBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    background-color: #007bff; 
+    color: #fff; 
+    border: none; 
+    border-radius: 5px; 
+}
+
+#restartBtn:hover {
+    background-color: #0056b3; /* Màu nền khi hover lên nút */
+}
